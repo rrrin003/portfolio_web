@@ -1,0 +1,14 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "files.associations": {
+    "*.scss": "scss",
+    "*.css": "css"
+  },
+  "eslint.useESLintClass": true,
+  "eslint.workingDirectories": ["./"],
+  "eslint.options": {
+    "flags": ["unstable_ts_config"]
+  }
+}

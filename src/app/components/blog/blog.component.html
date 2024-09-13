@@ -1,0 +1,95 @@
+<!-- Block describing the Blog START -->
+<div id="blogDetailSect" class="bg-light">
+  <div class="container vh-100">
+    <div
+      class="row justify-content-center align-items-center h-100 overflow-auto"
+    >
+      <!-- Block describing the Slideshow START -->
+      <div class="col-lg-6 my-3">
+        <div id="blogCarousel" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#blogCarousel"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#blogCarousel"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#blogCarousel"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="{{ blogData.img1 }}"
+                class="d-block img-fluid rounded shadow-sm"
+                alt="Blog Detail 1"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="{{ blogData.img2 }}"
+                class="d-block img-fluid rounded shadow-sm"
+                alt="Blog Detail 2"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="{{ blogData.img3 }}"
+                class="d-block img-fluid rounded shadow-sm"
+                alt="Blog Detail 3"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#blogCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#blogCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <!-- Block describing the Slideshow END -->
+      <!-- Block describing the Blog card START -->
+      <div class="col-lg-6 my-3">
+        <div class="card border-0 shadow-sm">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <h1 class="card-title mb-0">{{ blogData.title }}</h1>
+              <span class="fs-6 text-muted">{{ blogData.datetime }}</span>
+            </div>
+            <div id="blogContent" [innerHTML]="blogData.body"></div>
+            <a [routerLink]="['/']" class="btn btn-light mt-3">
+              <i class="bi bi-arrow-left"></i> 戻る
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Block describing the Blog card END -->
+    </div>
+  </div>
+</div>
+<!-- Block describing the Blog END -->

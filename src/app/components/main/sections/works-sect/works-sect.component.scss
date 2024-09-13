@@ -1,0 +1,37 @@
+.works-sect {
+  .works-title {
+    text-align: center;
+    padding-bottom: 60px;
+    position: relative;
+  }
+
+  .icon {
+    margin-right: 20px;
+
+    i {
+      color: var(--accent-color);
+      font-size: 40px;
+      line-height: 0;
+      transition: 0.3s;
+    }
+  }
+
+  .card {
+    border: none;
+    border-radius: 0.5rem;
+  }
+
+  .icon {
+    font-size: 2rem;
+    color: cornflowerblue;
+  }
+
+  .title {
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+}
